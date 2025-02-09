@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Fundo preto */
+            color: white; /* Cor do texto em branco */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinha os itens horizontalmente */
+            min-height: 100vh; /* Garante que o corpo tenha altura total */
+            justify-content: flex-start; /* Remove o espaço extra entre o conteúdo e o rodapé */
+        }
+        .titulo {
+            background-color: #003366; /* Azul marinho */
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Ajuste do padding para dar um bom espaço no topo */
+            font-size: 24px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+            justify-items: center; /* Centraliza as imagens dentro da grid */
+            width: 100%;
+            max-width: 1000px; /* Define uma largura máxima */
+            margin-top: 0; /* Remove a margem entre o topo e a galeria */
+            margin-bottom: 5px; /* Reduzido ainda mais o espaço entre as imagens e o rodapé */
+        }
+        .foto {
+            width: 100%;
+            height: auto; /* Mantém a proporção da imagem */
+            max-width: 300px; /* Limita a largura máxima das imagens */
+            border-radius: 0px;
+            border: 0px solid white; /* Adiciona uma borda branca nas imagens */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>🎯 BRUNO OLIVEIRA 📊</h1>
+    </div>
+
+    <div class="galeria">
+        <a href="https://forms.gle/dXK8wzjKHxpeEFnD6" target="_blank">
+            <img src="https://i.postimg.cc/3xGtm89Y/img10.png" alt="Foto 1" class="foto">
+        </a>
+        <a href="https://forms.gle/NZL1UT2mZmmKLg4XA" target="_blank">
+            <img src="https://i.postimg.cc/2yfzFDJg/img02.png" alt="Foto 2" class="foto">
+        </a>
+        <a href="https://www.google.com.br" target="_blank">
+            <img src="https://i.postimg.cc/CMjMMRn0/img03.png" alt="Foto 3" class="foto">
+        </a>
+        <a href="https://www.google.com.br" target="_blank">
+            <img src="https://i.postimg.cc/CLXvRBGc/img09.png" alt="Foto 4" class="foto">
+        </a>
+    </div>
+
+</body>
+</html>

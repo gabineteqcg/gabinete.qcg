@@ -3,62 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Galeria de Fotos</title>
+    <title>Meu Site com Fotos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: black; /* Fundo preto */
+            color: white; /* Cor do texto em branco */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinha os itens horizontalmente */
+            min-height: 100vh; /* Garante que o corpo tenha altura total */
+            justify-content: flex-start; /* Remove o espaço extra entre o conteúdo e o rodapé */
         }
-        header {
-            background-color: #333;
+        .titulo {
+            background-color: #003366; /* Azul marinho */
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0; /* Ajuste do padding para dar um bom espaço no topo */
+            font-size: 24px;
+            width: 100%;
+            max-width: 1000px;
         }
-        .gallery {
+        .galeria {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             padding: 20px;
-        }
-        .gallery img {
+            justify-items: center; /* Centraliza as imagens dentro da grid */
             width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1000px; /* Define uma largura máxima */
+            margin-top: 0; /* Remove a margem entre o topo e a galeria */
+            margin-bottom: 5px; /* Reduzido ainda mais o espaço entre as imagens e o rodapé */
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            position: fixed;
+        .foto {
             width: 100%;
-            bottom: 0;
+            height: auto; /* Mantém a proporção da imagem */
+            max-width: 300px; /* Limita a largura máxima das imagens */
+            border-radius: 0px;
+            border: 0px solid white; /* Adiciona uma borda branca nas imagens */
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Galeria de Fotos</h1>
-    </header>
-
-    <div class="gallery">
-        <img src="https://via.placeholder.com/400x300?text=Foto+1" alt="Foto 1">
-        <img src="https://via.placeholder.com/400x300?text=Foto+2" alt="Foto 2">
-        <img src="https://via.placeholder.com/400x300?text=Foto+3" alt="Foto 3">
-        <img src="https://via.placeholder.com/400x300?text=Foto+4" alt="Foto 4">
-        <img src="https://via.placeholder.com/400x300?text=Foto+5" alt="Foto 5">
-        <img src="https://via.placeholder.com/400x300?text=Foto+6" alt="Foto 6">
+    <div class="titulo">
+        <h1>♟ GABINETE / COMANDANTE-GERAL ♟</h1>
     </div>
 
-    <footer>
-        <p>Galeria de Fotos - 2025</p>
-    </footer>
+    <div class="galeria">
+        <a href="https://www.google.com.br" target="_blank">
+            <img src="https://i.postimg.cc/MGNZHRY6/img01.png" alt="Foto 1" class="foto">
+        </a>
+        <a href="https://forms.gle/DmHdv8kchG1snQMt7" target="_blank">
+            <img src="https://i.postimg.cc/2yfzFDJg/img02.png" alt="Foto 2" class="foto">
+        </a>
+        <a href="https://www.google.com.br" target="_blank">
+            <img src="https://i.postimg.cc/CMjMMRn0/img03.png" alt="Foto 3" class="foto">
+        </a>
+        <a href="https://www.google.com.br" target="_blank">
+            <img src="https://i.postimg.cc/2yFC0tNy/img04.png" alt="Foto 4" class="foto">
+        </a>
+    </div>
 
 </body>
 </html>

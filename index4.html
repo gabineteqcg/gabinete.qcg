@@ -9,53 +9,60 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: black;
-            color: white;
+            background-color: black; /* Fundo preto */
+            color: white; /* Cor do texto em branco */
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            align-items: center; /* Alinha os itens horizontalmente */
+            min-height: 100vh; /* Garante que o corpo tenha altura total */
+            justify-content: flex-start; /* Remove o espaço extra entre o conteúdo e o rodapé */
         }
         .titulo {
-            background-color: #003366;
+            background-color: #003366; /* Azul marinho */
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px 0; /* Ajuste do padding para dar um bom espaço no topo */
             font-size: 24px;
             width: 100%;
             max-width: 1000px;
         }
-        .titulo a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .titulo a:hover {
-            color: yellow;
-        }
         .galeria {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             padding: 20px;
-            justify-items: center;
+            justify-items: center; /* Centraliza as imagens dentro da grid */
             width: 100%;
-            max-width: 1000px;
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 1000px; /* Define uma largura máxima */
+            margin-top: 0; /* Remove a margem entre o topo e a galeria */
+            margin-bottom: 5px; /* Reduzido ainda mais o espaço entre as imagens e o rodapé */
         }
         .foto {
             width: 100%;
-            height: auto;
-            max-width: 800px;
+            height: auto; /* Mantém a proporção da imagem */
+            max-width: 300px; /* Limita a largura máxima das imagens */
             border-radius: 0px;
-            border: 0px solid white;
-            transition: filter 0.3s ease;
+            border: 0px solid white; /* Adiciona uma borda branca nas imagens */
         }
-        .foto:hover {
-            filter: grayscale(100%);
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Define a cor original do link */
+        .titulo a {
+            color: inherit; /* Mantém a cor original do texto */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        /* Muda a cor do link para amarelo quando o mouse passar sobre */
+        .titulo a:hover {
+            color: yellow; /* Altere para a cor amarela */
         }
     </style>
 </head>
@@ -63,13 +70,38 @@
     <div class="titulo">
         <h1><a href="https://gabineteqcg.github.io/gabinete.qcg/">🎯 GABINETE - PMPA 🎯</a></h1>
     </div>
+</body>
+</html>
+
+<style>
+    .galeria {
+        display: flex;
+        gap: 10px;
+    }
+
+    .foto {
+        transition: filter 0.3s ease;
+    }
+
+    .foto:hover {
+        filter: grayscale(100%);
+    }
+</style>
+
     <div class="galeria">
-        <a href="https://www.google.com.br" target="_blank">
-            <img src="https://i.postimg.cc/pTYyw5Bq/img26.png" alt="Foto 1" class="foto">
+        <a href="https://forms.gle/EmNV8Hac8XzoQcmr7" target="_blank">
+            <img src="https://i.postimg.cc/FRN6dCBx/img30.png" alt="Foto 1" class="foto">
+        </a>
+        <a href="https://gabineteqcg.github.io/gabinete.qcg/index4">
+            <img src="https://i.postimg.cc/QCMnS9s9/img31.png" alt="Foto 2" class="foto">
+        </a>
+        <a href="https://forms.gle/JnJi9qoQvCsh3EXr7">
+            <img src="https://i.postimg.cc/W38HM6Rc/img33.png" alt="Foto 3" class="foto">
         </a>
         <a href="https://www.google.com.br" target="_blank">
-            <img src="https://i.postimg.cc/cCFCHq23/img27.png" alt="Foto 2" class="foto">
+            <img src="https://i.postimg.cc/pr1cSW-X0/img32.png" alt="Foto 4" class="foto">
         </a>
     </div>
+
 </body>
 </html>

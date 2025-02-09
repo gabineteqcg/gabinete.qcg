@@ -48,9 +48,45 @@
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Define a cor original do link */
+        .titulo a {
+            color: inherit; /* Mantém a cor original do texto */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        /* Muda a cor do link para amarelo quando o mouse passar sobre */
+        .titulo a:hover {
+            color: yellow; /* Altere para a cor amarela */
+        }
+    </style>
+</head>
+<body>
     <div class="titulo">
-        <h1>📊 SECRETARIA 📊</h1>
+        <h1><a href="https://gabineteqcg.github.io/gabinete.qcg/">🎯 GABINETE - PMPA 🎯</a></h1>
     </div>
+</body>
+</html>
+
+<style>
+    .galeria {
+        display: flex;
+        gap: 10px;
+    }
+
+    .foto {
+        transition: filter 0.3s ease;
+    }
+
+    .foto:hover {
+        filter: grayscale(100%);
+    }
+</style>
 
     <div class="galeria">
         <a href="https://forms.gle/dXK8wzjKHxpeEFnD6" target="_blank">

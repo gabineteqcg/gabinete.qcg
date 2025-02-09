@@ -48,24 +48,62 @@
 </head>
 <body>
 
-    <div class="titulo">
-        <h1>🎯 GABINETE - PMPA 🎯</h1>
-    </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Define a cor original do link */
+        .titulo a {
+            color: inherit; /* Mantém a cor original do texto */
+            text-decoration: none; /* Remove o sublinhado */
+        }
 
-    <div class="galeria">
-        <a href="https://gabineteqcg.github.io/gabinete.qcg/index2">
-            <img src="https://i.postimg.cc/3xGtm89Y/img10.png" alt="Foto 1" class="foto">
-        </a>
-        <a href="https://forms.gle/NZL1UT2mZmmKLg4XA">
-            <img src="https://i.postimg.cc/2yfzFDJg/img02.png" alt="Foto 2" class="foto">
-        </a>
-        <a href="https://gabineteqcg.github.io/gabinete.qcg/index2">
-            <img src="https://i.postimg.cc/CMjMMRn0/img03.png" alt="Foto 3" class="foto">
-        </a>
-        <a href="https://gabineteqcg.github.io/gabinete.qcg/index2">
-            <img src="https://i.postimg.cc/CLXvRBGc/img09.png" alt="Foto 4" class="foto">
-        </a>
+        /* Muda a cor do link para amarelo quando o mouse passar sobre */
+        .titulo a:hover {
+            color: yellow; /* Altere para a cor amarela */
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1><a href="https://gabineteqcg.github.io/gabinete.qcg/">🎯 GABINETE - PMPA 🎯</a></h1>
     </div>
+</body>
+</html>
+
+
+<style>
+    .galeria {
+        display: flex;
+        gap: 10px;
+    }
+
+    .foto {
+        transition: filter 0.3s ease;
+    }
+
+    .foto:hover {
+        filter: grayscale(100%);
+    }
+</style>
+
+<div class="galeria">
+    <a href="https://gabineteqcg.github.io/gabinete.qcg/index2">
+        <img src="https://i.postimg.cc/3xGtm89Y/img10.png" alt="Foto 1" class="foto">
+    </a>
+    <a href="https://forms.gle/NZL1UT2mZmmKLg4XA">
+        <img src="https://i.postimg.cc/2yfzFDJg/img02.png" alt="Foto 2" class="foto">
+    </a>
+    <a href="https://gabineteqcg.github.io/gabinete.qcg/index2">
+        <img src="https://i.postimg.cc/CMjMMRn0/img03.png" alt="Foto 3" class="foto">
+    </a>
+    <a href="https://gabineteqcg.github.io/gabinete.qcg/index2">
+        <img src="https://i.postimg.cc/CLXvRBGc/img09.png" alt="Foto 4" class="foto">
+    </a>
+</div>
+
 
 </body>
 </html>

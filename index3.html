@@ -3,73 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 PROTOCOLO 📊</title>
+    <title>🎯 GABINETE - PMPA 🎯</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, sans-serif;
             background-color: black;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            justify-content: space-between;
+            overflow: hidden;
         }
-        .titulo {
+
+        /* MENU */
+        .menu {
+            width: 100%;
+            background-color: #003366;
+            padding: 2vh 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 3vw;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 2.5vh;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* GALERIA */
+        .galeria {
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            height: calc(100vh - 20vh); /* Considerando o rodapé e menu */
+            margin-top: 10vh;
+            align-items: center;
+            gap: 1vw; /* Ajusta o espaçamento proporcional entre as imagens */
+        }
+
+        .foto {
+            width: 19vw; /* Ajusta o tamanho das imagens para que ocupe toda a tela */
+            height: auto;
+            max-width: 100%; /* Garante que as imagens não ultrapassem a largura */
+            object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorcer */
+            border: 5px solid white; /* Adiciona uma borda branca de 5px nas imagens */
+            border-radius: 10px; /* Borda arredondada */
+            transition: border-color 0.3s ease, filter 0.3s ease; /* Anima a borda e a transformação de cor */
+        }
+
+        .foto:hover {
+            border-color: #003366; /* Muda a cor da borda para azul escuro ao passar o mouse */
+            filter: grayscale(100%); /* Aplica o efeito preto e branco na imagem */
+        }
+
+        /* RODAPÉ */
+        .rodape {
+            width: 100%;
             background-color: #003366;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            font-size: 24px;
-            width: 100%;
-            max-width: 1000px;
+            padding: 2vh 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
         }
-        .titulo a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .titulo a:hover {
-            color: yellow;
-        }
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            padding: 20px;
-            justify-items: center;
-            width: 100%;
-            max-width: 1000px;
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .foto {
-            width: 100%;
-            height: auto;
-            max-width: 800px;
-            border-radius: 0px;
-            border: 0px solid white;
-            transition: filter 0.3s ease;
-        }
-        .foto:hover {
-            filter: grayscale(100%);
-        }
+
     </style>
 </head>
 <body>
-    <div class="titulo">
-        <h1><a href="https://gabineteqcg.github.io/gabinete.qcg/">🎯 GABINETE - PMPA 🎯</a></h1>
+
+    <!-- MENU -->
+    <div class="menu">
+        <a href="https://gabinetepmpa.com.br/">INÍCIO</a>
+        <a href="https://gabinetepmpa.com.br/">SOBRE</a>
+        <a href="https://gabinetepmpa.com.br/">CONTATO</a>
     </div>
+
+    <!-- GALERIA -->
     <div class="galeria">
-        <a href="https://forms.gle/tFyPsM1Gc563ySnG9">
-            <img src="https://i.postimg.cc/m25Brtxg/img25.png" alt="Foto 1" class="foto">
+        <a href="https://forms.gle/tFyPsM1Gc563ySnG9" target="_blank">
+            <img src="https://i.postimg.cc/WzXZx0Nf/12.png" alt="Foto 1" class="foto">
         </a>
-        <a href="https://docs.google.com/spreadsheets/d/1McSBsIvhMrgnZdR4IgxYR6SZxCI2MXFFYvuyNPlKQ0E/edit?resourcekey=&gid=1625645363#gid=1625645363">
-            <img src="https://i.postimg.cc/yYd7B0bG/img24.png" alt="Foto 2" class="foto">
+        <a href="https://docs.google.com/spreadsheets/d/1McSBsIvhMrgnZdR4IgxYR6SZxCI2MXFFYvuyNPlKQ0E/edit?resourcekey=&gid=1625645363#gid=1625645363" target="_blank">
+            <img src="https://i.postimg.cc/05f761Yd/13.png" alt="Foto 2" class="foto">
+        </a>
+        <a href="https://gabinetepmpa.com.br/">
+            <img src="https://i.postimg.cc/mkbMdmsH/0.png" alt="Foto 3" class="foto">
+        </a>
+        <a href="https://gabinetepmpa.com.br/">
+            <img src="https://i.postimg.cc/mkbMdmsH/0.png" alt="Foto 4" class="foto">
+        </a>
+        <a href="https://gabinetepmpa.com.br/">
+            <img src="https://i.postimg.cc/mkbMdmsH/0.png" alt="Foto 5" class="foto">
         </a>
     </div>
+
+    <!-- RODAPÉ -->
+    <div class="rodape">
+        <p>🎯 Gabinete do Comandante-Geral da PMPA 🎯</p>
+    </div>
+
 </body>
 </html>
